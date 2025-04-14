@@ -6,10 +6,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Marcellus&family=Patua+One&display=swap');
 
-
 .cajaPrincipal{
-  background-color: blue;
   background-image: url(fondor.jpg) ;
+  opacity: 0.9;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -33,10 +32,10 @@
 
 
 .cajaPrincipal > div{
-  margin: 40px;
+  margin: 1em;
   display: inline-block;
-  width: 360px;
-  height: 580px;
+  width: 22vw;
+  height: 80vh;
   border-radius: 10px;
   border: rgba(0, 0, 0, 0.315) solid 1px;
   transition: 0.5s;
@@ -52,16 +51,25 @@
 
 .card_body:hover h2{
   text-transform: uppercase;
-  text-shadow: 2px 2px 4px rgb(0, 128, 21) ;
-  transition: 1s;
+  text-shadow: 2px 2px 6px orangered ;
+  transition: 0.7s;
   color: rgb(255, 255, 255);
 }
 
+.card_body h2{
+  margin-bottom: 37px ;
+  color: black;
+}
+
 .card_body p{
-  font-size: 25px;
+  font-size: 1.2rem;
+  color: black;
 }
 .card_body:hover p{
-  transition: 0.5s;
+  font-style:oblique ;
+  font-weight:lighter;
+  font-size: 1.2rem;
+  transition: 0.1s;
   color: rgb(255, 255, 255);
 }
 .card_body:hover span{
@@ -80,10 +88,12 @@
 }
 
 img {
-  padding: 7px;
-  height: 370px;
+  padding: 1em;
+  height: 40vh;
   transition: 0.5s;
   cursor: pointer;
+  margin-bottom: 21px;
+  object-fit: contain;
   
 }
 
