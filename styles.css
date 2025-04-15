@@ -1,109 +1,111 @@
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+   margin: 0; /*Elimina el margen predeterminado de los elementos*/
+  padding: 0; /*Elimina el relleno predeterminado de los elementos*/
+  box-sizing: border-box; /*modelo caja que incluye bordes y rellenos */
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Marcellus&family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Marcellus&family=Patua+One&display=swap'); /*Fuente importada de Google Fonts*/
 
 .cajaPrincipal{
-  background-image: url(fondor.jpg) ;
-  opacity: 0.9;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  background-attachment: fixed;
-  object-fit:contain;
-  transition: 0.5s;
-  text-align: center;
-
-  background-image: linear-gradient(120deg)
+  background-image: url(fondor.jpg) ; /*Imagen de fondo*/
+  opacity: 0.9; /*Tranparencia de la caja principal*/
+  background-repeat: no-repeat; /*Elimina las repeticiones de la imagen de fondo*/
+  background-size: cover; /*adapta la imagen para que cubra todo el espacio del contenido*/
+  background-position: top; /*fija la imagen en la parte superior*/
+  background-attachment: fixed; /*fija la imagen en todo el contenido*/
+  object-fit:contain; /*ajusta la imagen al contenido*/
+  transition: 0.5s; /*hace un efecto de transicion*/
+  text-align: center; /*centra el texto dentro de la caja */
 }
 
 .cajaPrincipal h1{
-  text-align: center;
-  font-size: 30px;
-  color: rgb(172, 172, 172);
-  margin-bottom: 30px;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center; /*centra el texto en la caja*/
+  font-size: 30px; /*establece el tamaño de la letra*/
+  color: rgb(172, 172, 172); /*establece color de la letra*/
+  margin-bottom: 30px; /*agrega un espacio debajo del texto*/
+  text-transform: uppercase; /*transforma el texto a mayuscula*/
+  letter-spacing: 5px; /*agrega un espacio entre cada letra*/
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /*cambia el tipo de letra del texto*/
 }
 
 
 .cajaPrincipal > div{
-  margin: 1em;
-  display: inline-block;
-  width: 22vw;
-  height: 80vh;
-  border-radius: 10px;
-  border: rgba(0, 0, 0, 0.315) solid 1px;
-  transition: 0.5s;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background: radial-gradient(rgb(2, 2, 63), rgb(49, 1, 105), rgb(123, 38, 235));
+  margin: 1em; /*crea un margen que separa cada div*/
+  display: inline-block; /*alinea todas las cajas una junto a otra*/
+  width: 22vw; /*establece el ancho de cada caja*/
+  height: 80vh; /*establece la altura de cada caja*/
+  border-radius: 10px; /*crea un borde redondeado en cada caja*/
+  border: rgba(123, 38, 235, 0.041) solid 1px; /*borde con transparencia*/
+  transition: 0.5s; /*hace un efecto de transicion*/
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /*cambia el tipo de letra del textoS*/
+  background-color:rgba(50, 1, 105); /*color de fondo oscuro con transparencia */
 
 }
 
 .card_body:hover{
-  transition: 1s;
-  background-color: rgba(0, 0, 0, 0.493);
+  transition: 1s; /*efecto de transicion lento */
+  background: radial-gradient(rgb(2, 2, 63), rgba(50, 1, 105, 0.616), rgba(123, 38, 235, 0.041)) /*transforma el fondo con un degradado circular*/
 }
 
 .card_body:hover h2{
-  text-transform: uppercase;
-  text-shadow: 2px 2px 6px orangered ;
-  transition: 0.7s;
-  color: rgb(255, 255, 255);
+  text-transform: uppercase; /*modifica el texto a mayuscula*/
+  text-shadow: 2px 2px 6px orangered ; /*crea un efecto de sombra en el texto*/
+  transition: 0.7s; /*efecto de transicion */
+  color: rgb(255, 255, 255); /*cambia el color del texto a blanco*/
 }
 
 .card_body h2{
-  margin-bottom: 37px ;
-  color: black;
+  margin-bottom: 37px ; /*crea un espacio debajo del texto*/
+  color: black; /*establece el color */
 }
 
 .card_body p{
-  font-size: 1.2rem;
-  color: black;
+  font-size: 1.2rem; /*determina el tamaño de la letra*/
+  color: black; /*define el color principal del texto*/
 }
 .card_body:hover p{
-  font-style:oblique ;
-  font-weight:lighter;
-  font-size: 1.2rem;
-  transition: 0.1s;
-  color: rgb(255, 255, 255);
+  font-style:oblique ; /*Cambia el estilo de la letra */
+  font-weight:lighter; /*reduce el grosor de la letra*/
+  font-size: 1.2rem; /*el tamaño de letra no cambia*/
+  transition: 0.1s; /*crea un efecto de transicion rapido*/
+  color: rgb(255, 255, 255); /*cambia el color ´principal a blanco*/
 }
 .card_body:hover span{
-  transition: 0.5s;
-  color: rgb(255, 255, 255);
+  transition: 0.5s; /*hace un efecto de transicion */
+  color: rgb(255, 255, 255); /*cambia el color de la letra a blanco*/
 }
 
 .card_footer:hover{
-    transition: 0.5s;
-    cursor: pointer;
+    transition: 0.5s; /*hace un efecto de transicion*/
+    cursor: pointer; /*modifica el estilo del cursor*/
 }
 
 .card_imagen:hover img{
-  transform: scale3d(1.3, 1.3, 1.3);
-  transition: 0.5s;
+  transform: scale3d(1.3, 1.3, 1.3); /*hace una lijera escala de la imagen*/
+  transition: 0.5s; /*hace un efecto de transicion*/
 }
 
 img {
-  padding: 1em;
-  height: 40vh;
-  transition: 0.5s;
-  cursor: pointer;
-  margin-bottom: 21px;
-  object-fit: contain;
+  padding: 1em; /*crea un espacio interno alrededor de la imagen*/
+  height: 40vh; /*establece la altura*/
+  transition: 0.5s; /*hace un efecto de transicion*/
+  cursor: pointer; /*modifica el estilo del cursor al tocar la imagen*/
+  margin-bottom: 21px; /*crea un espacio debajo de la imagen*/
+  object-fit: contain; /*ajusta la imagen dentro de la caja*/
   
 }
 
 .resaltar {
-  color: black; 
-  font-weight: bold;
-  font-size: 1em;
+  color: black; /*determina el color de la letra resaltada*/
+  font-weight: bold; /*la convierte en negrilla*/
+  font-size: 1em; /*establece un tamaño*/
 }
 
-
-
-
+#imagen{
+  max-width: 12em; /*establece un ancho maximo de la caja*/
+  height: auto; /*ajusta la altura automaticamente*/
+  display: inline-block; /*se alinea junto a las otras cajas */
+  transition: 0.5s; /*hace un efecto de transicion*/
+  background: linear-gradient(rgb(250, 250, 10), #ff4500, rgb(218, 0, 0)); /*transforma el fondo con un degradado lineal*/
+}
 
