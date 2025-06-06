@@ -109,3 +109,19 @@ img {
   background: linear-gradient(rgb(250, 250, 10), #ff4500, rgb(218, 0, 0)); /*transforma el fondo con un degradado lineal*/
 }
 
+@media (max-width: 448px) {
+  .cajaPrincipal > div{
+  width: 28vh;
+  }
+
+}
+
+@media (max-width: 748px ) {
+  .card_body{
+    width: 10vh;
+  }
+
+  .card_imagen {
+    width: 10vh;
+  }
+}
